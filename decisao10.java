@@ -1,77 +1,46 @@
 import java.util.Scanner;
 
-import javax.swing.Spring;
+public class decisao11 {
 
-public class decisao10 {
-	
-private static Scanner leitor;
- 
-
-	public static void main(String[] args)  {
+    private static String sexo1 = "Masculino";
+	private static String sexo2 = "feminino";
+	public static void main(String[] args) {
 		
-		float pesoideal, altura;
-		String resultado = "O peso ideal para vocÍ È: ", sexo;
+		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Por favor, digite a sua altura");
-		altura = leitor.nextFloat();
-		System.out.println("Digite seu sexo M ou F");
-		sexo = leitor.next();
+        System.out.println("Ol√°, hoje iremos medir o seu peso ideal, ent√£o:");
+		System.out.println("Digite o seu sexo, por favor:");
+		String sexo = sc.nextLine();
 		
-		if (sexo.equalsIgnoreCase ("F")) 
+		System.out.println("Digite a sua altura, por favor:");
+		Float altura =sc.nextFloat();
+		
+		float imcmasc = (float) ((72.7 * altura) - 58);
+		float imcfem = (float) ((62.1 * altura) - 44.7);
+		
+		
+		if(sexo.equals(sexo1))
 		{
-			pesoideal = (float) ((62.1*altura) - 44.7);
-			resultado = resultado + pesoideal;
+		System.out.println("O seu peso ideal ent√£o √©: " +imcmasc);
+		
 		}
-	 else if (sexo.equalsIgnoreCase ("M")) 
-		{	
-			pesoideal = (float) ((72.7*altura) - 58);
-			resultado = resultado + pesoideal;
-		}
-	  else
-		{	
 		
-			resultado = "O sexo n„o foi informado";
-			
-			System.out.println(resultado);
+	else if(sexo.equals(sexo2));
 		
-		
-		
-		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		}
-	
+		System.out.println("O seu peso ideal √©:" +imcfem);
 	}
-}  
+		
+
+		
+		
+		
+		
+		
+		
+		
+	
+		
+
+
+}
+	
