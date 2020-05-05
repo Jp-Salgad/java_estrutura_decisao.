@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 public class decisao11 {
 
-    private static String sexo1 = "Masculino";
+    private static String sexo1 = "masculino";
 	private static String sexo2 = "feminino";
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		
         System.out.println("Olá, hoje iremos medir o seu peso ideal, então:");
-		System.out.println("Digite o seu sexo, por favor:");
+		System.out.println("Digite o seu sexo, por favor (MASCULINO OU FEMININO:");
 		String sexo = sc.nextLine();
 		
 		System.out.println("Digite a sua altura, por favor:");
@@ -25,7 +25,7 @@ public class decisao11 {
 		
 		}
 		
-	else if(sexo.equals(sexo2));
+	else 
 		
 		System.out.println("O seu peso ideal é:" +imcfem);
 	}
