@@ -9,7 +9,7 @@ public class decisao11 {
 		Scanner sc = new Scanner(System.in);
 		
         System.out.println("Olá, hoje iremos medir o seu peso ideal, então:");
-		System.out.println("Digite o seu sexo, por favor (MASCULINO OU FEMININO:");
+		System.out.println("Digite o seu sexo, por favor (MASCULINO OU FEMININO):");
 		String sexo = sc.nextLine();
 		
 		System.out.println("Digite a sua altura, por favor:");
